@@ -1,0 +1,20 @@
+/* ex8 - clas etaria*/
+#include <stdio.h>
+
+int main( void )
+{
+    int idade; 
+
+    printf( "Digite a idade: " );
+    scanf( "%d", &idade );
+
+    if ( idade < 12 ) {
+        printf( "Criança\n" );
+    } else if ( idade < 18 ) {
+        printf( "Adolescente\n" );
+    } else {
+        printf( "Adulto\n" );
+    }
+
+    return 0;
+}
