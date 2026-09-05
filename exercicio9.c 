@@ -1,0 +1,22 @@
+/* ex9 - validação de troco */
+#include <stdio.h>
+
+int main( void )
+{
+    int compra; 
+    int pago;   
+
+    printf( "Digite o valor da compra: " );
+    scanf( "%d", &compra );
+
+    printf( "Digite o valor pago: " );
+    scanf( "%d", &pago );
+
+    if ( pago < compra ) {
+        printf( "Erro: Dinheiro insuficiente\n" );
+    } else {
+        printf( "Troco: %d\n", pago - compra );
+    }
+
+    return 0;
+}
